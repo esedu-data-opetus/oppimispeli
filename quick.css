@@ -1,0 +1,317 @@
+/*Quick.css*/
+/*This turns the cursor into a pointer so .on events will fire*/
+div .clockDrag {
+	cursor: pointer;
+	word-wrap: break-word
+	
+}
+
+body {
+	font-size: 200%;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+.padder {
+	padding-left: 15px;
+	padding-top: 10px;
+	
+}
+.hideClass{
+	visibility: hidden;
+}
+/*Image drag element*/
+.clockDrag {
+	position: relative;
+	display: block;
+	float: left;
+	height: 140px;
+	min-width: 140px;
+	border: 2px solid #ff751a;
+	background-color: #ffe0cc;
+	
+	
+}
+/*Image drop element*/
+.clockDrop {
+	position: relative;
+	font-size: 90%;
+	float: left;
+	height: 140px;
+	width: 140px;
+	border: 2px solid #0099e6;
+	background-color: #99ddff;
+	padding: 2px;
+	margin: 0 auto;
+	word-break: keep-all;
+	
+}
+/*The border containing draggable elements*/
+.borderPatrol {
+	overflow: hidden;
+	width: 740px;
+	height: 840px;
+	
+}
+/*The host div of draggables*/
+.block {
+
+	height: 400px;
+	width: 800px;
+	float: left;
+	padding: 10px;
+	
+	
+}
+/*The base class of text based draggables*/
+.numbero {
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 240px;
+	border: 2px solid #ff751a;
+	background-color: #ffe0cc;
+	padding: 10px;
+}
+
+.imageDragger {
+	position: relative;
+	float: left;
+	height: 100px;
+	min-width: 100px;
+	border: 2px solid #ff751a;
+	background-color: #ffe0cc;
+	padding: 5px;
+}
+/*Base class of text based droppables*/
+.dropTarget {
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 240px;
+	border: 2px solid #0099e6;
+	background-color: #99ddff;
+	padding: 10px;
+}
+/*Drop target of image based droppables*/
+.dropTargetImage {
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 250px;
+	border: 2px solid #0099e6;
+	background-color: #99ddff;
+	padding: 10px;
+	margin: 0 auto;
+	
+	
+}
+/*The right answer indicator for images*/
+.imageFinish {
+	border: 2px solid #248f24;
+	background-color: #80ff80;
+	
+}
+
+/*Image base size class*/
+.imgReg{
+	height: 135px;
+	width: 135px;
+	
+}
+/*Image right answer indicator class*/
+.imageResize{
+	height: 125px;
+	width: 125px;
+	margin-top: 5%;
+	}
+/*Div that previews images it's on admin.php, editing.php and uploadPics.php*/
+.imagePreviewer {
+	background-color: #D3D3D3;
+	
+}
+/*A picture class used in making a new image based XML*/
+.delPic {
+	float: left;
+}
+/*Hides specific inputs on admin.php and editing.php*/
+.hideInput {
+	visibility: hidden;
+}
+/*Host of drop divs*/
+.drop {
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	float: left;
+
+	width: 800px;
+	min-height: 400px;
+	background-color: white;
+	padding: 10px;
+	
+}
+/*Text based */
+.finish {
+	height: 50px;
+	width: 240px;
+	border: 2px solid #248f24;
+	background-color: #80ff80;
+	
+	
+}
+
+.finalScore {
+	position: relative;
+	margin: 0 auto;
+	
+	
+}
+/*Used to negate some unwanted elementes of Bootstraps navbar*/
+.navbar {
+    display: block;
+    float: none; 
+	text-align: center;
+}
+/*It's the manual at index.php*/
+#ohjeetEtusivu {
+		height: 750px;
+		width: 650px;
+		position: absolute;
+		z-index: 2;
+	}
+/*houses the droppables and draggables*/
+#content{
+	height: 700px;
+	width: 700px;
+	
+}
+
+#saving{
+	z-index: +1;
+	left: 0px;
+    top: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(214, 214, 194, 0.6);
+}
+#actualForm{
+	width: 100%;
+	top: 40%;
+    left: 30%;
+    margin-right: 40%;
+	position: absolute;
+	
+}
+/*Sticky footer with the basic game buttons*/
+#footing {
+	position: absolute;
+    left: 20px;
+    bottom: 40px;
+    height: 45px;
+    width: 100%;
+	z-index: 3;
+}
+
+#zoomiPad {
+	visibility: hidden;
+}
+
+#nameA{
+	font-family: Arial;
+}
+
+#eMail{
+	font-family: Arial;
+}
+/*Used to recognize smaller screens like iPads*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  #zoomiPad {
+	visibility: visible;
+	}
+  }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  body {
+	font-size: 150%;
+	
+	overflow: hidden;
+	}
+	  
+	  .borderPatrol {
+	
+	width: 900px;
+	height: 600px;
+	position: absolute;
+	
+	}
+	  
+	  .drop {
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	float: left;
+
+	width: 980px;
+	min-height: 300px;
+	background-color: white;
+	padding: 10px;
+	
+	}
+	
+	.dropTarget {
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 175px;
+	border: 2px solid #0099e6;
+	background-color: #99ddff;
+	padding: 10px;
+	}
+
+	.block {
+	height: 300px;
+	width: 980px;
+	float: left;
+	padding: 10px;
+	}
+	.numbero {
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 175px;
+	border: 2px solid #ff751a;
+	background-color: #ffe0cc;
+	padding: 10px;
+	}
+	.finish {
+	height: 50px;
+	width: 175px;
+	border: 2px solid #248f24;
+	background-color: #80ff80;
+	padding: 20px;
+	
+	}
+	#zoomiPad {
+	visibility: visible;
+	}
+	
+	#ohjeetEtusivu {
+		height: 500px;
+		width: 500px;
+		position: absolute;
+		z-index: 2;
+	}
+}
