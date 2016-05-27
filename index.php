@@ -22,7 +22,7 @@ $theGameToBeAdded = $_GET['incoming'];
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="jquery.ui.touch.js"></script>
 		<script src="jquery.mobile.custom.min.js"></script>
-		<script type="text/javascript" src="quickJSmin.js"></script>
+		<script type="text/javascript" src="quickTesting.js"></script>
 	</head>
 
 	<body>
